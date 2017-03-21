@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20170321001231) do
     t.string   "uid"
     t.string   "token"
     t.string   "refresh_token"
+    t.integer  "karma"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end

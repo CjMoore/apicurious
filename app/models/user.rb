@@ -5,6 +5,7 @@ class User < ApplicationRecord
     user.name      = data['name']
     user.token     = access_token[0]
     user.refresh_token = access_token[1]
+    user.karma     = data['link_karma']
     user.save
     user
   end
