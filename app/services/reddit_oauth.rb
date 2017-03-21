@@ -14,9 +14,10 @@ class RedditOauth
                                     :basic_auth => {:username => ENV['reddit_id'],
                                                     :password => ENV['reddit_secret']} )
 
-
     @access_token   = JSON.parse(response.body)['access_token']
-    @access_token
+    refresh_token  = JSON.parse(response.body)['refresh_token']
+    @tokens = [@access_token, refresh_token]
+    @tokens
   end
 
   def data
