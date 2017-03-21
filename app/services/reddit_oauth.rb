@@ -26,6 +26,7 @@ class RedditOauth
                                     :headers => { :Authorization => "bearer #{@access_token}",
                                                   "User-Agent": "apicurious by iungere"})
     data           = JSON.parse(oauth_response.body)
+    byebug
     data
   end
 
