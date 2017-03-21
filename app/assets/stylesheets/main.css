@@ -1,0 +1,68 @@
+body {
+  background: #262626;
+}
+
+/*
+======
+Dashboard
+======
+*/
+.home-question {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 48px;
+  color: #f7af67;
+  text-align: center;
+  margin-top: 200px;
+}
+
+/*
+======
+user dashboard
+======
+*/
+
+#username {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 48px;
+  color: #f7af67;
+  text-align: center;
+}
+
+/*
+======
+nav
+======
+*/
+
+.nav {
+  background: green;
+  margin-top: 0px;
+}
+
+/*
+======
+buttons
+======
+*/
+
+.button {
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #f7af67;
+  border-radius: 5px;
+  color: #f7af67;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+
+.button:hover {
+  color: #262626;
+  background: #f7af67
+}
+
+.blue {
+  background: blue;
+}
