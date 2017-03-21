@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'omniauth-reddit', :git => 'git://github.com/jackdempsey/omniauth-reddit.git'
 gem "figaro"
 gem 'faraday'
+gem 'httparty'
 
 gem 'simplecov', :require => false, :group => :test
 # Use Capistrano for deployment

@@ -4,6 +4,7 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.string :name
       t.string :provider
       t.string :uid
+      t.string :token
 
       t.timestamps
     end
