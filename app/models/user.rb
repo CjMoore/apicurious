@@ -9,4 +9,8 @@ class User < ApplicationRecord
     user.save
     user
   end
+
+  def subreddits
+    UserSubreddits.all(token)
+  end
 end

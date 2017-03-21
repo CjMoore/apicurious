@@ -1,17 +1,16 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/charlottemoore/turing/3module/projects/apicurious/spec/features/oauth_redirect_spec.rb": [
+      "/Users/charlottemoore/turing/3module/projects/apicurious/spec/features/root_path_spec.rb": [
         1,
         null,
         1,
         1,
+        null,
         1,
         null,
-        0,
-        null,
-        0,
-        null,
+        1,
+        1,
         null,
         null,
         null
@@ -256,11 +255,6 @@
         null,
         1
       ],
-      "/Users/charlottemoore/turing/3module/projects/apicurious/config/initializers/omniauth.rb": [
-        1,
-        1,
-        null
-      ],
       "/Users/charlottemoore/turing/3module/projects/apicurious/config/initializers/session_store.rb": [
         null,
         null,
@@ -287,6 +281,7 @@
         null,
         1,
         1,
+        1,
         null,
         1,
         null,
@@ -294,20 +289,6 @@
       ],
       "/Users/charlottemoore/turing/3module/projects/apicurious/app/helpers/application_helper.rb": [
         1,
-        null
-      ],
-      "/Users/charlottemoore/turing/3module/projects/apicurious/spec/features/root_path_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
         null
       ],
       "/Users/charlottemoore/turing/3module/projects/apicurious/spec/models/user_spec.rb": [
@@ -319,18 +300,63 @@
       ],
       "/Users/charlottemoore/turing/3module/projects/apicurious/app/models/user.rb": [
         1,
+        null,
         1,
         0,
-        null,
-        null,
-        null,
-        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         null,
         null
       ],
       "/Users/charlottemoore/turing/3module/projects/apicurious/app/models/application_record.rb": [
         1,
         1,
+        null
+      ],
+      "/Users/charlottemoore/turing/3module/projects/apicurious/spec/services/reddit_service_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/charlottemoore/turing/3module/projects/apicurious/app/services/reddit_service.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/charlottemoore/turing/3module/projects/apicurious/app/controllers/home_controller.rb": [
@@ -351,6 +377,6 @@
         null
       ]
     },
-    "timestamp": 1490055333
+    "timestamp": 1490135258
   }
 }
