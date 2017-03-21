@@ -1,16 +1,17 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/charlottemoore/turing/3module/projects/apicurious/spec/features/root_path_spec.rb": [
+      "/Users/charlottemoore/turing/3module/projects/apicurious/spec/features/oauth_redirect_spec.rb": [
         1,
         null,
         1,
         1,
-        null,
         1,
         null,
-        1,
-        1,
+        0,
+        null,
+        0,
+        null,
         null,
         null,
         null
@@ -285,10 +286,50 @@
         1,
         null,
         1,
+        1,
+        null,
+        1,
         null,
         null
       ],
       "/Users/charlottemoore/turing/3module/projects/apicurious/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/charlottemoore/turing/3module/projects/apicurious/spec/features/root_path_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/charlottemoore/turing/3module/projects/apicurious/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/charlottemoore/turing/3module/projects/apicurious/app/models/user.rb": [
+        1,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/charlottemoore/turing/3module/projects/apicurious/app/models/application_record.rb": [
+        1,
         1,
         null
       ],
@@ -301,9 +342,15 @@
       "/Users/charlottemoore/turing/3module/projects/apicurious/app/controllers/application_controller.rb": [
         1,
         1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
         null
       ]
     },
-    "timestamp": 1490052992
+    "timestamp": 1490055333
   }
 }
