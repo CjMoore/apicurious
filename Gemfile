@@ -30,6 +30,11 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# gem 'omniauth-reddit', :git => 'git://github.com/jackdempsey/omniauth-reddit.git'
+gem "figaro"
+gem 'faraday'
+gem 'httparty'
+
 gem 'simplecov', :require => false, :group => :test
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
