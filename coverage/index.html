@@ -14,14 +14,14 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-03-22T13:21:23-06:00">2017-03-22T13:21:23-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-03-22T13:27:08-06:00">2017-03-22T13:27:08-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">95.71%</span></span>
+    (<span class="covered_percent"><span class="green">95.92%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
@@ -31,9 +31,9 @@
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>35</b> files in total.
-    <b>233</b> relevant lines. 
-    <span class="green"><b>223</b> lines covered</span> and
+    <b>36</b> files in total.
+    <b>245</b> relevant lines. 
+    <span class="green"><b>235</b> lines covered</span> and
     <span class="red"><b>10</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -137,7 +137,7 @@
         <td>8</td>
         <td>8</td>
         <td>0</td>
-        <td>3.3</td>
+        <td>4.0</td>
       </tr>
       
       <tr>
@@ -147,7 +147,7 @@
         <td>15</td>
         <td>15</td>
         <td>0</td>
-        <td>1.7</td>
+        <td>1.9</td>
       </tr>
       
       <tr>
@@ -167,7 +167,7 @@
         <td>18</td>
         <td>10</td>
         <td>8</td>
-        <td>1.9</td>
+        <td>2.3</td>
       </tr>
       
       <tr>
@@ -177,7 +177,7 @@
         <td>12</td>
         <td>12</td>
         <td>0</td>
-        <td>1.9</td>
+        <td>2.0</td>
       </tr>
       
       <tr>
@@ -346,6 +346,16 @@
         <td>16</td>
         <td>9</td>
         <td>9</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#0b6765f191b2ca55a98786325aa6c5ae2e9c1d75" class="src_link" title="spec/models/subreddit_rule_spec.rb">spec/models/subreddit_rule_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>21</td>
+        <td>12</td>
+        <td>12</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -1132,8 +1142,8 @@
           <code class="ruby">  def initialize(description)</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="6">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="12" data-linenumber="6">
+          <span class="hits">12</span>
           
           <code class="ruby">    @description = description</code>
         </li>
@@ -1156,20 +1166,20 @@
           <code class="ruby">  def self.create(name, token)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="10">
+          <span class="hits">2</span>
           
           <code class="ruby">    serv = RedditService.new(token)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
           
           <code class="ruby">    serv.sub_rules(name).map do |rule|</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="12">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="12" data-linenumber="12">
+          <span class="hits">12</span>
           
           <code class="ruby">      SubredditRule.new(rule[:description])</code>
         </li>
@@ -1288,20 +1298,20 @@
           <code class="ruby">  def refresh_tokens</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="14">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="14">
+          <span class="hits">5</span>
           
           <code class="ruby">    token_request = RedditOauth.new</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="15">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="15">
+          <span class="hits">5</span>
           
           <code class="ruby">    token_request.refresh_tokens(refresh_token)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="16">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="16">
+          <span class="hits">5</span>
           
           <code class="ruby">    update_attribute(:token, token_request.refresh_tokens(refresh_token))</code>
         </li>
@@ -1522,8 +1532,8 @@
           <code class="ruby">  def initialize(code=nil)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="6">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="6">
+          <span class="hits">5</span>
           
           <code class="ruby">    @code = code</code>
         </li>
@@ -1678,8 +1688,8 @@
           <code class="ruby">  def refresh_tokens(token)</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="32">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="10" data-linenumber="32">
+          <span class="hits">10</span>
           
           <code class="ruby">    response = HTTParty.post(&quot;https://www.reddit.com/api/v1/access_token&quot;,</code>
         </li>
@@ -1720,14 +1730,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="39">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="10" data-linenumber="39">
+          <span class="hits">10</span>
           
           <code class="ruby">    token = JSON.parse(response.body)[&#39;access_token&#39;]</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="40">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="10" data-linenumber="40">
+          <span class="hits">10</span>
           
           <code class="ruby">    token</code>
         </li>
@@ -1780,8 +1790,8 @@
           <code class="ruby">  def initialize(token)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="4">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="4">
+          <span class="hits">7</span>
           
           <code class="ruby">    @token = token</code>
         </li>
@@ -3473,6 +3483,150 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="0b6765f191b2ca55a98786325aa6c5ae2e9c1d75">
+  <div class="header">
+    <h3>spec/models/subreddit_rule_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>12</b> relevant lines. 
+      <span class="green"><b>12</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe SubredditRule, type: :model do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context &quot;class methods&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;can return all rules for subreddit&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      user = User.create(name: &#39;iungere&#39;, provider: &quot;reddit&quot;, uid: &quot;a1z5y&quot;, karma: 4, refresh_token: ENV[&#39;refresh_token&#39;])</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      user.refresh_tokens</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      subreddit_rules = [ {description: &quot;dont do that thing&quot;},</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">                          {description: &quot;do do that thing&quot;}]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      allow_any_instance_of(RedditService).to receive(:sub_rules).and_return(subreddit_rules)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      rules = SubredditRule.create(&quot;politics&quot;, &quot;not_token&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(rules.count).to eq(2)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(rules.first.description).to eq(&quot;dont do that thing&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(rules.last.description).to eq(&quot;do do that thing&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">end</code>
