@@ -10,11 +10,8 @@ class Subreddit
     @token = token
   end
 
-  def get_rules
-    serv = RedditService.new(@token)
-    serv.sub_rules(@name).each do |rule|
-      @rules << rule[:description]
-    end
+  def rules
+    @rules = SubredditRules.create(@name, @token)
     @rules
   end
 

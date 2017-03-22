@@ -4,6 +4,6 @@ class SubredditController < ApplicationController
 
   def show
     @subreddit = Subreddit.create(params[:sub], current_user.token)
-    @rules = @subreddit.get_rules
+    @rules = @subreddit.rules
   end
 end

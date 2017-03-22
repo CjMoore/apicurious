@@ -311,7 +311,40 @@
         null
       ],
       "/Users/charlottemoore/turing/3module/projects/apicurious/spec/models/subreddit_spec.rb": [
-
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/charlottemoore/turing/3module/projects/apicurious/app/models/subreddit.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
       ],
       "/Users/charlottemoore/turing/3module/projects/apicurious/spec/models/user_spec.rb": [
         1,
@@ -533,35 +566,21 @@
         null,
         null
       ],
-      "/Users/charlottemoore/turing/3module/projects/apicurious/app/models/subreddit.rb": [
-        1,
-        null,
-        1,
-        null,
+      "/Users/charlottemoore/turing/3module/projects/apicurious/app/models/subreddit_rules.rb": [
         1,
         null,
         1,
         1,
-        1,
-        1,
         null,
-        null,
-        1,
         1,
         1,
         10,
         null,
         1,
         null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
         null
       ]
     },
-    "timestamp": 1490197390
+    "timestamp": 1490199967
   }
 }
