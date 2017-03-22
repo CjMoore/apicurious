@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-03-22T14:34:56-06:00">2017-03-22T14:34:56-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-03-22T14:43:54-06:00">2017-03-22T14:43:54-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">96.25%</span></span>
+    (<span class="covered_percent"><span class="green">94.34%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.67
+         1.64
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>37</b> files in total.
-    <b>267</b> relevant lines. 
-    <span class="green"><b>257</b> lines covered</span> and
-    <span class="red"><b>10</b> lines missed </span>
+    <b>265</b> relevant lines. 
+    <span class="green"><b>250</b> lines covered</span> and
+    <span class="red"><b>15</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -57,7 +57,7 @@
         <td>8</td>
         <td>6</td>
         <td>2</td>
-        <td>0.9</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
@@ -76,16 +76,6 @@
         <td>4</td>
         <td>2</td>
         <td>2</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#ded3f5629f8936c85ca889f6e822351f956b97fa" class="src_link" title="app/controllers/subreddit_controller.rb">app/controllers/subreddit_controller.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>10</td>
-        <td>6</td>
-        <td>6</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -117,17 +107,17 @@
         <td>12</td>
         <td>12</td>
         <td>0</td>
-        <td>15.2</td>
+        <td>1.5</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#7c16f7b64699b8515ca230cd95f0d3bf7754375a" class="src_link" title="app/models/subreddit.rb">app/models/subreddit.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="yellow strong">83.33 %</td>
         <td>23</td>
         <td>12</td>
-        <td>12</td>
-        <td>0</td>
-        <td>1.3</td>
+        <td>10</td>
+        <td>2</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
@@ -137,7 +127,7 @@
         <td>8</td>
         <td>8</td>
         <td>0</td>
-        <td>4.0</td>
+        <td>1.3</td>
       </tr>
       
       <tr>
@@ -157,7 +147,7 @@
         <td>10</td>
         <td>10</td>
         <td>0</td>
-        <td>16.7</td>
+        <td>9.2</td>
       </tr>
       
       <tr>
@@ -177,7 +167,7 @@
         <td>12</td>
         <td>12</td>
         <td>0</td>
-        <td>2.6</td>
+        <td>2.1</td>
       </tr>
       
       <tr>
@@ -331,6 +321,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#bcb5ea178f6e3e27ebb2a19846b5218b9faa2813" class="src_link" title="spec/features/post_comments_path_spec.rb">spec/features/post_comments_path_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>8</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#302e8f490d5ebd647ccf3673bc632e18816f053b" class="src_link" title="spec/features/root_path_spec.rb">spec/features/root_path_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>11</td>
@@ -342,12 +342,12 @@
       
       <tr>
         <td class="strong"><a href="#a0de363242b9474c1c7be288d33e8bdaf52ee14d" class="src_link" title="spec/features/subreddit_path_spec.rb">spec/features/subreddit_path_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>16</td>
-        <td>9</td>
-        <td>9</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td class="red strong">70.0 %</td>
+        <td>17</td>
+        <td>10</td>
+        <td>7</td>
+        <td>3</td>
+        <td>0.7</td>
       </tr>
       
       <tr>
@@ -510,8 +510,8 @@
           <code class="ruby">  def authorize!</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="11">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
           
           <code class="ruby">    unless current_user</code>
         </li>
@@ -637,84 +637,6 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-      
-        <div class="source_table" id="ded3f5629f8936c85ca889f6e822351f956b97fa">
-  <div class="header">
-    <h3>app/controllers/subreddit_controller.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class SubredditController &lt; ApplicationController</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  before_action :authorize!</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def show</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @subreddit = Subreddit.create(params[:sub], current_user.token)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @rules = @subreddit.rules</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @hot_posts = @subreddit.hot_posts</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">end</code>
@@ -852,26 +774,26 @@
           <code class="ruby">  def initialize(title, url, ups, id)</code>
         </li>
       
-        <li class="covered" data-hits="29" data-linenumber="9">
-          <span class="hits">29</span>
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
           
           <code class="ruby">    @title = title</code>
         </li>
       
-        <li class="covered" data-hits="29" data-linenumber="10">
-          <span class="hits">29</span>
+        <li class="covered" data-hits="2" data-linenumber="10">
+          <span class="hits">2</span>
           
           <code class="ruby">    @url = url</code>
         </li>
       
-        <li class="covered" data-hits="29" data-linenumber="11">
-          <span class="hits">29</span>
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
           
           <code class="ruby">    @ups = ups</code>
         </li>
       
-        <li class="covered" data-hits="29" data-linenumber="12">
-          <span class="hits">29</span>
+        <li class="covered" data-hits="2" data-linenumber="12">
+          <span class="hits">2</span>
           
           <code class="ruby">    @id = id</code>
         </li>
@@ -894,26 +816,26 @@
           <code class="ruby">  def self.create(name, token)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
           
           <code class="ruby">    serv = RedditService.new(token)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="17">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
           
           <code class="ruby">    serv.sub_hot_posts(name).map do |post|</code>
         </li>
       
-        <li class="covered" data-hits="29" data-linenumber="18">
-          <span class="hits">29</span>
+        <li class="covered" data-hits="2" data-linenumber="18">
+          <span class="hits">2</span>
           
           <code class="ruby">      data = post[:data]</code>
         </li>
       
-        <li class="covered" data-hits="29" data-linenumber="19">
-          <span class="hits">29</span>
+        <li class="covered" data-hits="2" data-linenumber="19">
+          <span class="hits">2</span>
           
           <code class="ruby">      HotPost.new(data[:title], data[:url], data[:ups], data[:id])</code>
         </li>
@@ -943,11 +865,11 @@
         <div class="source_table" id="7c16f7b64699b8515ca230cd95f0d3bf7754375a">
   <div class="header">
     <h3>app/models/subreddit.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="yellow">83.33 %</span> covered</h4>
     <div>
       <b>12</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -996,14 +918,14 @@
           <code class="ruby">  def initialize(name, token)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="8">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
           <code class="ruby">    @name = name</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="9">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
           
           <code class="ruby">    @token = token</code>
         </li>
@@ -1026,8 +948,8 @@
           <code class="ruby">  def rules</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
           
           <code class="ruby">    SubredditRule.create(@name, @token)</code>
         </li>
@@ -1050,8 +972,8 @@
           <code class="ruby">  def hot_posts</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
           
           <code class="ruby">    HotPost.create(@name, @token)</code>
         </li>
@@ -1074,8 +996,8 @@
           <code class="ruby">  def self.create(subreddit_name, token)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="21">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
           
           <code class="ruby">    Subreddit.new(subreddit_name, token)</code>
         </li>
@@ -1140,8 +1062,8 @@
           <code class="ruby">  def initialize(description)</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="6">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
           
           <code class="ruby">    @description = description</code>
         </li>
@@ -1164,20 +1086,20 @@
           <code class="ruby">  def self.create(name, token)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="10">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
           
           <code class="ruby">    serv = RedditService.new(token)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="11">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
           
           <code class="ruby">    serv.sub_rules(name)[:rules].map do |rule|</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="12">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="2" data-linenumber="12">
+          <span class="hits">2</span>
           
           <code class="ruby">      SubredditRule.new(rule[:description])</code>
         </li>
@@ -1416,14 +1338,14 @@
           <code class="ruby">  def initialize(name, url)</code>
         </li>
       
-        <li class="covered" data-hits="52" data-linenumber="9">
-          <span class="hits">52</span>
+        <li class="covered" data-hits="27" data-linenumber="9">
+          <span class="hits">27</span>
           
           <code class="ruby">    @name = name</code>
         </li>
       
-        <li class="covered" data-hits="52" data-linenumber="10">
-          <span class="hits">52</span>
+        <li class="covered" data-hits="27" data-linenumber="10">
+          <span class="hits">27</span>
           
           <code class="ruby">    @url  = url</code>
         </li>
@@ -1458,8 +1380,8 @@
           <code class="ruby">    serv.user_subreddits.map do |subreddit|</code>
         </li>
       
-        <li class="covered" data-hits="52" data-linenumber="16">
-          <span class="hits">52</span>
+        <li class="covered" data-hits="27" data-linenumber="16">
+          <span class="hits">27</span>
           
           <code class="ruby">      UserSubreddits.new(subreddit[:data][:display_name], subreddit[:data][:url])</code>
         </li>
@@ -1788,8 +1710,8 @@
           <code class="ruby">  def initialize(token)</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="4">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="8" data-linenumber="4">
+          <span class="hits">8</span>
           
           <code class="ruby">    @token = token</code>
         </li>
@@ -1860,8 +1782,8 @@
           <code class="ruby">  def sub_rules(subreddit)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
           
           <code class="ruby">   parse(HTTParty.get(&quot;https://www.reddit.com/r/#{subreddit}/about/rules.json&quot;))</code>
         </li>
@@ -1884,8 +1806,8 @@
           <code class="ruby">  def sub_hot_posts(subreddit)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="20">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
           
           <code class="ruby">    parse(HTTParty.get(&quot;https://www.reddit.com/r/#{subreddit}/hot.json&quot;))[:data][:children]</code>
         </li>
@@ -1920,8 +1842,8 @@
           <code class="ruby">  def parse(response)</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="26">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="5" data-linenumber="26">
+          <span class="hits">5</span>
           
           <code class="ruby">    JSON.parse(response.body, symbolize_names: true)</code>
         </li>
@@ -3292,6 +3214,72 @@
   </pre>
 </div>
       
+        <div class="source_table" id="bcb5ea178f6e3e27ebb2a19846b5218b9faa2813">
+  <div class="header">
+    <h3>spec/features/post_comments_path_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;when user is on subreddit show and they click on comments&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;they are directed to a post show with all comments for that post&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">    </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
         <div class="source_table" id="302e8f490d5ebd647ccf3673bc632e18816f053b">
   <div class="header">
     <h3>spec/features/root_path_spec.rb</h3>
@@ -3379,11 +3367,11 @@
         <div class="source_table" id="a0de363242b9474c1c7be288d33e8bdaf52ee14d">
   <div class="header">
     <h3>spec/features/subreddit_path_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">70.0 %</span> covered</h4>
     <div>
-      <b>9</b> relevant lines. 
-      <span class="green"><b>9</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
   </div>
   
@@ -3456,8 +3444,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
           
           <code class="ruby">    click_on(&#39;politics&#39;)</code>
         </li>
@@ -3468,19 +3456,25 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">    expect(current_path).to eq(subreddit_path)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
           
           <code class="ruby">    expect(page).to have_content(&quot;politics&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">end</code>

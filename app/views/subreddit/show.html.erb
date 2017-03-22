@@ -5,19 +5,26 @@
 
 <div class="side-bar col s3 ">
   <ul class= "collection with-header">
-    <li class="collection-header">Rules</li>
+    <li class="collection-header deep-orange lighten-2">Rules</li>
     <% @rules.each do |rule| %>
-      <li class="collection-item"><%= rule.description %></li>
+      <li class="collection-item amber lighten-3"><%= rule.description %></li>
     <% end %>
   </ul>
 </div >
 
 
   <div class="col s9">
-    <div class="collection">
+    <table class="bordered">
       <% @hot_posts.each do |post| %>
-        <a href="<%= post.url %>" class="collection-item posts"><%= post.title %><span class="secondary-content"><%= post.ups %></span></a>
+        <tr>
+          <td class="post">
+            <a href="<%= post.url %>" class="post-link" ><%= post.title %><span class="badge ups left white-text"><%= post.ups %></span></a>
+          </td>
+          <td class="comment-column">
+            <%= link_to "Comments", post_path, class: "comment-link"%>
+          </td>
+        </tr>
       <% end %>
     </div>
-  </div>
+  </table>
 </div>
