@@ -4,7 +4,7 @@ describe RedditService do
   attr_reader :service
 
   before(:each) do
-    user = User.create(name: 'iungere', provider: "reddit", uid: "a1z5y", token: "Y6U8WBVO6SnGuriG8Q0M5Bi_0ic", karma: 4, refresh_token: "16888390-nljBZBj2C1TdEK8PyT1-6PPGYtM")
+    user = User.create(name: 'iungere', provider: "reddit", uid: "a1z5y", karma: 4, refresh_token: ENV['refresh_token'])
     user.refresh_tokens
     # byebug
     @service = RedditService.new(user.token)

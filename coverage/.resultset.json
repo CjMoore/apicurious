@@ -310,6 +310,9 @@
         null,
         null
       ],
+      "/Users/charlottemoore/turing/3module/projects/apicurious/spec/models/subreddit_spec.rb": [
+
+      ],
       "/Users/charlottemoore/turing/3module/projects/apicurious/spec/models/user_spec.rb": [
         1,
         null,
@@ -368,6 +371,9 @@
         1,
         1,
         null
+      ],
+      "/Users/charlottemoore/turing/3module/projects/apicurious/spec/models/user_subreddit_spec.rb": [
+
       ],
       "/Users/charlottemoore/turing/3module/projects/apicurious/spec/services/reddit_service_spec.rb": [
         1,
@@ -556,6 +562,6 @@
         null
       ]
     },
-    "timestamp": 1490150565
+    "timestamp": 1490197390
   }
 }
