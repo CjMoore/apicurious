@@ -4,22 +4,23 @@ class Subreddit
 
   attr_reader :name
 
-  def initialize(name)
+  def initialize(name, token)
     @name = name
     @rules = Array.new
+    @token = token
   end
 
-  def get_rules(subreddit_name, token)
-    serv = RedditService.new(token)
+  def get_rules
+    serv = RedditService.new(@token)
     # subreddit = Subreddit.new(subreddit_name)
-    serv.sub_rules(subreddit_name)[:rules].each do |rule|
+    serv.sub_rules(@name).each do |rule|
       @rules << rule[:description]
     end
     @rules
   end
 
-  def self.create(subreddit_name)
-    Subreddit.new(subreddit_name)
+  def self.create(subreddit_name, token)
+    Subreddit.new(subreddit_name, token)
   end
 
 
