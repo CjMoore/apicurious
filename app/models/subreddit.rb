@@ -20,6 +20,4 @@ class Subreddit
   def self.create(subreddit_name, token)
     Subreddit.new(subreddit_name, token)
   end
-
-
 end

@@ -33,7 +33,7 @@ describe RedditService do
       subreddit = "politics"
       posts = @service.sub_hot_posts(subreddit)
 
-      expect(posts.count).to eq(26)
+      expect(posts.count).to eq(27)
     end
   end
 end
