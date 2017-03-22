@@ -8,7 +8,7 @@ class SubredditRule
 
   def self.create(name, token)
     serv = RedditService.new(token)
-    serv.sub_rules(name).map do |rule|
+    serv.sub_rules(name)[:rules].map do |rule|
       SubredditRule.new(rule[:description])
     end
   end
