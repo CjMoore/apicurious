@@ -3,5 +3,10 @@
 <div class="container">
   <h1 id="username"><%= current_user.name %></h1>
   <h4 id="karma">Karma: <%= current_user.karma %></h3>
-  <%#= link_to "Logout", logout_path, class: "button" %>
+
+  <div class="collection">
+    <% current_user.subreddits.each do |subreddit| %>
+       <%= link_to subreddit.name, "" , class: "collection-item" %>
+    <% end %>
+  </ul>
 </div>
