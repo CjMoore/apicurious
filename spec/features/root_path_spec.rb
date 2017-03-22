@@ -7,6 +7,5 @@ describe "when user visits root path" do
 
     expect(page).to have_content("Are you curious?")
     expect(page).to have_link("I am curious")
-
   end
 end

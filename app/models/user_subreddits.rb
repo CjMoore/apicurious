@@ -20,5 +20,4 @@ class UserSubreddits
       UserSubreddits.new(subreddit[:data][:display_name], subreddit[:data][:url])
     end
   end
-
 end

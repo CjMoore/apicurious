@@ -2,7 +2,7 @@ class RedditOauth
 
   attr_reader :code, :client_id, :client_secret
 
-  def initialize(code)
+  def initialize(code=nil)
     @code = code
   end
 
@@ -21,7 +21,6 @@ class RedditOauth
   end
 
   def data
-    headers =
     oauth_response =  HTTParty.get("https://oauth.reddit.com/api/v1/me",
                                     :headers => { :Authorization => "bearer #{@access_token}",
                                                   "User-Agent": "apicurious by iungere"})
@@ -29,4 +28,15 @@ class RedditOauth
     data
   end
 
+  def refresh_tokens(token)
+    response = HTTParty.post("https://www.reddit.com/api/v1/access_token",
+                    :body => { :grant_type => "refresh_token",
+                               :refresh_token => token,
+                               :redirect_uri => 'http://localhost:3000/auth/reddit/callback'},
+                    :basic_auth => {:username => ENV['reddit_id'],
+                                    :password => ENV['reddit_secret']} )
+
+    token = JSON.parse(response.body)['access_token']
+    token
+  end
 end

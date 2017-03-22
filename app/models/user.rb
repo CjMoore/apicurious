@@ -10,6 +10,12 @@ class User < ApplicationRecord
     user
   end
 
+  def refresh_tokens
+    token_request = RedditOauth.new
+    token_request.refresh_tokens(refresh_token)
+    update_attribute(:token, token_request.refresh_tokens(refresh_token))
+  end
+
   def subreddits
     UserSubreddits.all(token)
   end
