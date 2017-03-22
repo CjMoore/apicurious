@@ -16,6 +16,10 @@ class RedditService
    parse(HTTParty.get("https://www.reddit.com/r/#{subreddit}/about/rules.json"))[:rules]
   end
 
+  def sub_hot_posts(subreddit)
+    parse(HTTParty.get("https://www.reddit.com/r/#{subreddit}/hot.json"))[:data][:children]
+  end
+
   private
 
   def parse(response)

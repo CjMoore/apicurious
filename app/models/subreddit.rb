@@ -6,13 +6,15 @@ class Subreddit
 
   def initialize(name, token)
     @name = name
-    @rules = Array.new
     @token = token
   end
 
   def rules
-    @rules = SubredditRules.create(@name, @token)
-    @rules
+    SubredditRule.create(@name, @token)
+  end
+
+  def hot_posts
+    HotPost.create(@name, @token)
   end
 
   def self.create(subreddit_name, token)
