@@ -10,10 +10,6 @@ class UserSubreddits
     @url  = url
   end
 
-  def self.service
-    @service ||= RedditService.new
-  end
-
   def self.all(token)
     serv = RedditService.new(token)
     serv.user_subreddits.map do |subreddit|
