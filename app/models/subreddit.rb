@@ -12,8 +12,7 @@ class Subreddit
 
   def get_rules
     serv = RedditService.new(@token)
-    # subreddit = Subreddit.new(subreddit_name)
-    serv.sub_rules(@name).each do |rule|
+    serv.sub_rules(@name)[:rules].each do |rule|
       @rules << rule[:description]
     end
     @rules

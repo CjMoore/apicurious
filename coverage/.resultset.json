@@ -525,7 +525,6 @@
         1,
         1,
         null,
-        null,
         null
       ],
       "/Users/charlottemoore/turing/3module/projects/apicurious/app/models/subreddit.rb": [
@@ -543,7 +542,6 @@
         null,
         1,
         1,
-        null,
         1,
         10,
         null,
@@ -558,6 +556,6 @@
         null
       ]
     },
-    "timestamp": 1490150488
+    "timestamp": 1490150565
   }
 }
