@@ -6,16 +6,15 @@ class Subreddit
 
   def initialize(name, token)
     @name = name
-    @rules = Array.new
     @token = token
   end
 
-  def get_rules
-    serv = RedditService.new(@token)
-    serv.sub_rules(@name).each do |rule|
-      @rules << rule[:description]
-    end
-    @rules
+  def rules
+    SubredditRule.create(@name, @token)
+  end
+
+  def hot_posts
+    HotPost.create(@name, @token)
   end
 
   def self.create(subreddit_name, token)

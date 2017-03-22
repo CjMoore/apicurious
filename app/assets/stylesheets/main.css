@@ -72,6 +72,10 @@ subreddit show
   height: 100%;
 }
 
+.posts {
+  background: blue;
+}
+
 /*
 ======
 buttons
