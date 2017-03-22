@@ -14,7 +14,6 @@ class RedditService
 
   def sub_rules(subreddit)
    parse(HTTParty.get("https://www.reddit.com/r/#{subreddit}/about/rules.json"))
-  #  [:rules]
   end
 
   private

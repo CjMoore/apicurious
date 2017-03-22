@@ -9,13 +9,18 @@ class Subreddit
     @rules = Array.new
   end
 
-  def self.get_rules(subreddit_name, token)
+  def get_rules(subreddit_name, token)
     serv = RedditService.new(token)
-    subreddit = Subreddit.new(subreddit_name)
-
+    # subreddit = Subreddit.new(subreddit_name)
     serv.sub_rules(subreddit_name)[:rules].each do |rule|
-      subreddit.rules << rule[:description]
+      @rules << rule[:description]
     end
-    subreddit
+    @rules
   end
+
+  def self.create(subreddit_name)
+    Subreddit.new(subreddit_name)
+  end
+
+
 end
