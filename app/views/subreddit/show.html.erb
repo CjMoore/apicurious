@@ -1,18 +1,23 @@
 <%= render partial: 'shared/nav' %>
 
+<h1 class="sub-name col s6"><%= @subreddit.name %></h1>
 <div class="row">
 
 <div class="side-bar col s3 ">
-
-
-
   <ul class= "collection with-header">
     <li class="collection-header">Rules</li>
     <% @rules.each do |rule| %>
       <li class="collection-item"><%= rule.description %></li>
     <% end %>
   </ul>
-</div>
-  <h1 class="sub-name col s6"><%= @subreddit.name %></h1>
+</div >
 
+
+  <div class="col s9">
+    <div class="collection">
+      <% @hot_posts.each do |post| %>
+        <a href="<%= post.url %>" class="collection-item posts"><%= post.title %><span class="secondary-content"><%= post.ups %></span></a>
+      <% end %>
+    </div>
+  </div>
 </div>
