@@ -23,9 +23,11 @@ class Comment
 
   def get_replies(reply_data)
     replies = []
-    unless reply_data.empty?
+    unless reply_data.nil? || reply_data.empty?
       reply_data[:data][:children].each do |reply|
-        replies << Comment.new(reply[:data][:body], reply[:data][:author], reply[:data][:replies], reply[:data][:depth])
+        unless reply[:data][:body].nil?
+          replies << Comment.new(reply[:data][:body], reply[:data][:author], reply[:data][:replies], reply[:data][:depth])
+        end
       end
     end
     replies
