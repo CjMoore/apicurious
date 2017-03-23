@@ -15,6 +15,7 @@
 
 /lor
 /coverage/*
+/spec/cassettes
 
 # Ignore Byebug command history file.
 .byebug_history
