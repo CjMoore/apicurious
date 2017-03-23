@@ -102,6 +102,12 @@ subreddit show
   background-color: green;
 }
 
+#post-list {
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-top: 7px;
+}
+
 /*
 ======
 post show
@@ -112,18 +118,64 @@ post show
   height: 100px;
 }
 
+ul .collection{
+  border: none;
+}
+
 .badge .comment-author {
   float: right;
 }
 
 .depth-0 {
   padding-left: 0px;
+  border: 1px solid grey;
 }
 
 .depth-1 {
-  padding-left: 100px;
+  margin-left: 50px;
+  border: 1px solid grey;
 }
 
+.depth-2 {
+  margin-left: 100px;
+  border: 1px solid grey;
+}
+
+.depth-3 {
+  margin-left: 150px;
+  border: 1px solid grey;
+}
+
+.depth-4 {
+  margin-left: 200px;
+  border: 1px solid grey;
+}
+
+
+.comment {
+  color: white;
+  background: #515151;
+  padding: 15px 10px 15px 10px;
+}
+
+.comment-post-link {
+  color: #f7af67;
+}
+
+.comment-post-link:hover {
+  color: #81c784;
+}
+
+#comment-header {
+  background: #263238 ;
+  border: none;
+  margin: 15px 0 15px 0;
+  border: 1px solid gray;
+}
+
+#comm {
+  text-align: right;
+}
 /*
 ======
 buttons

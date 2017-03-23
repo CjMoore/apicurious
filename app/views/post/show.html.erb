@@ -6,7 +6,9 @@
   </div>
 
   <ul class="collection with-header col s8">
-    <li class="collection=header"><h4><%= link_to @post.title, @post.url %></h4></li>
+    <li class="collection-header" id="comment-header"><h5><%= link_to @post.title, @post.url , class: "comment-post-link"%></h5></li>
+    <li><%= link_to "<<< Back to subreddit", subreddit_path({sub: @post.sub_name}), class: "white-text" %></li>
+    <li class="white-text" id="comm">comments</li>
     <% @comments.each do |comment| %>
     <div class="row">
 
