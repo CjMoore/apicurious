@@ -9,6 +9,13 @@
     <li class="collection=header"><h4><%= link_to @post.title, @post.url %></h4></li>
     <% @comments.each do |comment| %>
       <li class="collection-item comment-body"><%= comment.body %><span class="badge comment-author"><%= comment.author %></span></li>
+      <% unless comment.children.nil? %>
+        <ul class="collection replies">
+          <% comment.children.each do |reply| %>
+            <li class="collection-item green"><%= reply.body%></li>
+          <% end %>
+        </ul>
+      <% end %>
     <% end %>
   </ul>
 
