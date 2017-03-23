@@ -10,6 +10,5 @@ class PostController < ApplicationController
 
 
     @comments = @post.comments
-    byebug
   end
 end

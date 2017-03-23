@@ -3,7 +3,8 @@ class HotPost
   attr_reader :title,
               :url,
               :ups,
-              :id
+              :id,
+              :sub_name
 
   def initialize(title, url, ups, id, sub_name=nil, token=nil)
     @title = title

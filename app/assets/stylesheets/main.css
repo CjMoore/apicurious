@@ -104,6 +104,20 @@ subreddit show
 
 /*
 ======
+post show
+======
+*/
+
+.collection-item .comment-body {
+  height: 100px;
+}
+
+.badge .comment-author {
+  float: right;
+}
+
+/*
+======
 buttons
 ======
 */
