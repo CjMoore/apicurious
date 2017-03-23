@@ -4,7 +4,8 @@ module PostHelper
     html = content_tag(:ul, class: "collection") {
       ul_contents = ""
 
-      ul_contents << content_tag(:li, comment.body, class: "collection-item depth-#{comment.depth}")
+
+      ul_contents << content_tag(:li, comment.body , class: "depth-#{comment.depth} comment") 
       unless comment.replies.empty?
         comment.replies.each do |reply|
           ul_contents << get_comment_trie(reply)
