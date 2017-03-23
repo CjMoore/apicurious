@@ -116,6 +116,14 @@ post show
   float: right;
 }
 
+.depth-0 {
+  padding-left: 0px;
+}
+
+.depth-1 {
+  padding-left: 100px;
+}
+
 /*
 ======
 buttons

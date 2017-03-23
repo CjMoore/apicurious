@@ -8,10 +8,16 @@
   <ul class="collection with-header col s8">
     <li class="collection=header"><h4><%= link_to @post.title, @post.url %></h4></li>
     <% @comments.each do |comment| %>
+    <div class="row">
+      
       <%= get_comment_trie(comment) %>
+    </div>
       <%# byebug %>
     <% end %>
   </ul>
+
+</div>
+<div class="col s2">
 
 </div>
 
