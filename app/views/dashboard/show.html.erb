@@ -6,7 +6,7 @@
 
   <div class="collection">
     <% current_user.subreddits.each do |subreddit| %>
-       <%= link_to subreddit.name, subreddit_path({sub: subreddit.name}) , class: "collection-item  blue-grey darken-3 white-text" %>
+       <%= link_to subreddit.name, subreddit_path({sub: subreddit.name}) , class: "collection-item grey darken-2 white-text" %>
     <% end %>
   </ul>
 </div>

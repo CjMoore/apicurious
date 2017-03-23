@@ -3,9 +3,6 @@ require 'rails_helper'
 describe SubredditRule, type: :model do
   context "class methods" do
     it "can return all rules for subreddit" do
-      user = User.create(name: 'iungere', provider: "reddit", uid: "a1z5y", karma: 4, refresh_token: ENV['refresh_token'])
-      user.refresh_tokens
-
       subreddit_rules = { rules: [ {description: "dont do that thing"},
                           {description: "do do that thing"}] }
 

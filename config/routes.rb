@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get '/subreddit', to: "subreddit#show"
 
+  get '/post', to: "post#show"
+
   root "home#show"
 
 end

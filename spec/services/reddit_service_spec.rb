@@ -33,7 +33,18 @@ describe RedditService do
       subreddit = "politics"
       posts = @service.sub_hot_posts(subreddit)
 
-      expect(posts.count).to eq(26)
+      expect(posts.count).to eq(27)
+    end
+  end
+
+  describe "#post_comments" do
+    it "returns list of comments for post" do
+      subreddit = "APICurious"
+      post_id = "576a5l"
+
+      comments = @service.post_comments(subreddit, post_id)
+
+      expect(comments.count).to eq(2)
     end
   end
 end

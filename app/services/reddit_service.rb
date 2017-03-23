@@ -20,6 +20,10 @@ class RedditService
     parse(HTTParty.get("https://www.reddit.com/r/#{subreddit}/hot.json"))[:data][:children]
   end
 
+  def post_comments(subreddit, post_id)
+    parse(HTTParty.get("https://www.reddit.com/r/#{subreddit}/comments/#{post_id}.json?depth=4"))[1][:data][:children]
+  end
+
   private
 
   def parse(response)

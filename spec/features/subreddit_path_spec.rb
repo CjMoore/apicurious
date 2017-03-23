@@ -11,6 +11,7 @@ describe "when user is on their dashboard" do
 
     click_on('politics')
 
+    expect(current_path).to eq(subreddit_path)
     expect(page).to have_content("politics")
   end
 end
