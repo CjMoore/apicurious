@@ -4,11 +4,12 @@ RSpec.describe User, type: :model do
   context "methods" do
     it "should have subreddits" do
       user = User.create(name: 'iungere', provider: "reddit", uid: "a1z5y", karma: 4, refresh_token: ENV['refresh_token'])
-      user.refresh_tokens
+      VCR.use_cassette('services/user/user_subs') do
 
-      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+        allow_any_instance_of(ApplicationController).to   receive(:current_user).and_return(user)
 
-      expect(user.subreddits.count).to eq(25)
+        expect(user.subreddits.count).to eq(25)
+      end
     end
 
     it "should create itslef from the hash output from reddit_data" do
