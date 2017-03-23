@@ -10,5 +10,6 @@ class PostController < ApplicationController
 
 
     @comments = @post.comments
+
   end
 end
