@@ -18,6 +18,9 @@
       <% @hot_posts.each do |post| %>
         <tr>
           <td class="post">
+            <% unless post.thumbnail == "self"%>
+            <img src="<%= post.thumbnail %>" class="avatar thumbnail" />
+            <% end %>
             <a href="<%= post.url %>" class="post-link" ><%= post.title %><span class="badge ups left white-text"><%= post.ups %></span></a>
           </td>
           <td class="comment-column">

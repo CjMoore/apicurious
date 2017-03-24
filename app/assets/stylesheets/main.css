@@ -108,6 +108,12 @@ subreddit show
   margin-top: 7px;
 }
 
+.thumbnail {
+  width: 30px;
+  height: 30px;
+  border: 2px solid gray;
+}
+
 /*
 ======
 post show
