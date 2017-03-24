@@ -10,7 +10,7 @@ class RedditOauth
     response       = HTTParty.post("https://www.reddit.com/api/v1/access_token",
                                     :body => { :grant_type => "authorization_code",
                                                :code => @code,
-                                               :redirect_uri => 'https://apicurious-reddit.herokuapp/auth/reddit/callback'},
+                                               :redirect_uri => 'http://localhost:3000/auth/reddit/callback'},
                                     :basic_auth => {:username => ENV['reddit_id'],
                                                     :password => ENV['reddit_secret']} )
 
