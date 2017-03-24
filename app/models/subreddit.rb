@@ -4,20 +4,20 @@ class Subreddit
 
   attr_reader :name
 
-  def initialize(name, token)
+  def initialize(name)
     @name = name
-    @token = token
+    # @token = token
   end
 
   def rules
-    SubredditRule.create(@name, @token)
+    SubredditRule.create(@name)
   end
 
   def hot_posts
-    HotPost.create(@name, @token)
+    HotPost.create(@name)
   end
 
-  def self.create(subreddit_name, token)
-    Subreddit.new(subreddit_name, token)
+  def self.create(subreddit_name)
+    Subreddit.new(subreddit_name)
   end
 end

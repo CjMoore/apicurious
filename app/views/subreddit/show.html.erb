@@ -21,7 +21,7 @@
             <a href="<%= post.url %>" class="post-link" ><%= post.title %><span class="badge ups left white-text"><%= post.ups %></span></a>
           </td>
           <td class="comment-column">
-            <%= link_to "Comments", post_path({post_title: post.title, post_url: post.url, post_id: post.id, post_ups: post.ups, sub_name: @subreddit.name}), class: "comment-link"%>
+            <%= link_to "Comments", post_path({title: post.title, url: post.url, id: post.id, ups: post.ups, sub_name: @subreddit.name}), class: "comment-link"%>
           </td>
         </tr>
       <% end %>

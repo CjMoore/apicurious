@@ -6,28 +6,28 @@ class HotPost
               :id,
               :sub_name
 
-  def initialize(title, url, ups, id, sub_name=nil, token=nil)
-    @title = title
-    @url = url
-    @ups = ups
-    @id = id
-    @token = token
+  def initialize(data, sub_name=nil)
+    @title = data[:title]
+    @url = data[:url]
+    @ups = data[:ups]
+    @id = data[:id]
     @sub_name = sub_name
+    @thumbnail = nil
   end
 
-  def self.create(name, token)
-    serv = RedditService.new(token)
+  def self.create(name)
+    serv = RedditService.new
     serv.sub_hot_posts(name).map do |post|
       data = post[:data]
-      HotPost.new(data[:title], data[:url], data[:ups], data[:id])
+      HotPost.new(data)
     end
   end
 
-  def self.find(title, url, ups, id, sub_name, token)
-    HotPost.new(title, url, ups, id, sub_name, token)
+  def self.find(data)
+    HotPost.new(data, data[:sub_name])
   end
 
   def comments
-    Comment.create(@token, @id, @sub_name)
+    Comment.create(@id, @sub_name)
   end
 end

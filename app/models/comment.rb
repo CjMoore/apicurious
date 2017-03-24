@@ -13,8 +13,8 @@ class Comment
     @depth = depth
   end
 
-  def self.create(token, post_id, sub_name)
-    serv = RedditService.new(token)
+  def self.create(post_id, sub_name)
+    serv = RedditService.new
     serv.post_comments(sub_name, post_id).map do |comment|
       comment_data = comment[:data]
       Comment.new(comment_data[:body], comment_data[:author], comment_data[:replies], comment_data[:depth])
