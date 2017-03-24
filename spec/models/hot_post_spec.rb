@@ -8,7 +8,7 @@ describe HotPost, type: :model do
 
       allow_any_instance_of(RedditService).to receive(:sub_hot_posts).and_return(subreddit_hot_posts)
 
-      posts = HotPost.create("politics", "token")
+      posts = HotPost.create("politics")
 
       expect(posts.first.title).to eq("headline")
       expect(posts.last.title).to eq("headline2")
@@ -16,7 +16,8 @@ describe HotPost, type: :model do
     end
 
     it "can create a new post with find that includes token and subreddit" do
-      post = HotPost.find("title", "/url", "140", "id12", "politics", "token")
+      input_data = {title: "title", url: "/url", id: "id12", ups: "140", sub_name: "politics"}
+      post = HotPost.find(input_data)
 
       expect(post.class).to eq(HotPost)
       expect(post.title).to eq("title")
@@ -31,7 +32,9 @@ describe HotPost, type: :model do
 
       allow_any_instance_of(RedditService).to receive(:post_comments).and_return(comments_hash)
 
-      posts = HotPost.find("title", "/url", "140", "id12", "politics", "token")
+      input_data = {title: "title", url: "/url", ups: "140"}
+
+      posts = HotPost.find(input_data)
 
       comments = posts.comments
 

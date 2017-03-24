@@ -8,7 +8,7 @@ describe SubredditRule, type: :model do
 
       allow_any_instance_of(RedditService).to receive(:sub_rules).and_return(subreddit_rules)
 
-      rules = SubredditRule.create("politics", "not_token")
+      rules = SubredditRule.create("politics")
 
       expect(rules.count).to eq(2)
       expect(rules.first.description).to eq("dont do that thing")

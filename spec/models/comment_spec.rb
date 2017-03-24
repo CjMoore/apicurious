@@ -7,7 +7,7 @@ describe Comment, type: :model do
 
       allow_any_instance_of(RedditService).to receive(:post_comments).and_return(comments_hash)
 
-      comments = Comment.create("token", "post_id", "subreddit")
+      comments = Comment.create( "post_id", "subreddit")
 
       expect(comments.count).to eq(1)
       expect(comments.first.replies.count).to eq(1)
