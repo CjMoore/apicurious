@@ -6,7 +6,7 @@ class RedditService
 
 
   def user_subreddits
-    parse(HTTParty.get("https://oauth.reddit.com/subreddits/mine/subscriber.json",
+    parse(HTTParty.get("https://oauth.reddit.com/subreddits/mine/subscriber.json?limit=100",
                               :headers => { :Authorization => "bearer #{@token}",
                                             "User-Agent": "apicurious by iungere"}))[:data][:children]
 

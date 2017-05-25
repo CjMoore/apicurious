@@ -1,0 +1,6 @@
+language: ruby
+rvm: ruby-2.3.0
+services:
+  - postgresql
+before_script: -psql -c 'create database apicurious_test;' -U postgres
+script: bundle exec rspec spec
